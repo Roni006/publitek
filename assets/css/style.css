@@ -1,0 +1,157 @@
+/*
+! !Author Info
+Name: Anik Islam
+Template: Publitek (Agency Website Landing page)
+Version: 1.0.0
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ? ROOT VARIABLES */
+:root{
+    --header-color: #3C0486;
+    --white-color: #fff;
+    --black-color: #000;
+    --bar-btn-bg: #370673;
+
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+}
+h1{
+    font-size: 58PX;
+}
+h2{
+    font-size: 55PX;
+}
+h3{
+    font-size: 48PX;
+}
+h4{
+    font-size: 24PX;
+}
+h5{
+    font-size: 22;
+}
+h6{
+    font-size: 16PX;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* HEADER SECTION START */
+.header-section{
+    background-color: var(--header-color);
+}
+.header-row{
+    display: flex;
+    align-items: center;
+    padding: 15px 5px 15px 5px;
+    gap: 50px;
+    /* justify-content: space-around; */
+
+}
+/* nav{
+    align-items: center;
+    text-align: center;
+} */
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+.nav-menu ul li{
+   display: inline-block;
+   list-style: none;
+   position: relative;
+   align-items: center;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 0 25px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s;
+    
+}
+.nav-menu ul li a:hover{
+    color: #7f1dffe8;
+}
+ul li ul.submenu li{
+    display: block;
+    padding: 8px 0;
+    margin-left: 20px;
+}
+ul li ul.submenu{
+    position: absolute;
+    width: 300px;
+    top: calc(100% + 30px);
+    text-align: left;
+    background-color: #3C0486;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transition: 0.3s;
+    
+}
+.arrowbtm{
+    margin-left: 5px;
+}
+ul li:hover ul{
+    top: 100%;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar li{
+    padding: 5px 0;
+}
+.sidebar{
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 300px;
+   height: 500px;
+   background-color: #3c04869f;
+   backdrop-filter: blur(10px);
+   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   padding: 20px 0;
+   transition: 0.2s;
+   display: none;
+   /* margin-left: 10px; */
+}
+
+.open{
+    font-size: 25px;
+    color: var(--white-color);
+    background-color: var(--bar-btn-bg);
+    padding: 8px 12px;
+    /* display: none; */
+}
+.close{
+    margin-bottom: 30px;
+    font-size: 32px;
+    background-color: var(--bar-btn-bg);
+}
+/* HEADER SECTION END */
+
+
+/*  SECTION START */
+/*  SECTION END */
